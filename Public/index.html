@@ -21,12 +21,59 @@
 
     <h2>Lista de Productos</h2>
     <ul id="lista-productos">
-        <!-- Aquí se mostrarán los productos guardados -->
+        <li data-precio="50">Producto 1 - $50</li>
+        <li data-precio="30">Producto 2 - $30</li>
+        <li data-precio="70">Producto 3 - $70</li>
+        <li data-precio="20">Producto 4 - $20</li>
+        <li data-precio="60">Producto 5 - $60</li>
     </ul>
 
-    <!-- Jor aca pone el botón para organizar la lista -->
 
-    <!--Jor aca manda el botón para borrar todos los productos -->
+    <!-- Botón para organizar la lista en orden alfabético -->
+    <button onclick="organizarLista()">Organizar por orden alfabético</button>
+
+    <script>
+        function organizarLista() {
+            const listaProductos = document.getElementById('lista-productos');
+            const items = Array.from(listaProductos.children);
+
+            items.sort(function(a, b) {
+                return a.textContent.localeCompare(b.textContent);
+            });
+
+            items.forEach(item => listaProductos.appendChild(item));
+        }
+    </script>
+
+
+    <!-- Botón para ordenar los productos de menor a mayor precio -->
+    <button onclick="organizarPorPrecio()">Organizar por menor precio</button>
+
+    <script>
+        function organizarPorPrecio() {
+            const listaProductos = document.getElementById('lista-productos');
+            const items = Array.from(listaProductos.children);
+
+            items.sort(function(a, b) {
+                const precioA = parseFloat(a.getAttribute('data-precio'));
+                const precioB = parseFloat(b.getAttribute('data-precio'));
+                return precioA - precioB;
+            });
+
+            items.forEach(item => listaProductos.appendChild(item));
+        }
+    </script>
+
+
+    <!-- Botón para borrar todos los productos -->
+    <button onclick="borrarProductos()">Borrar todos los productos</button>
+
+    <script>
+        function borrarProductos() {
+            const listaProductos = document.getElementById('lista-productos');
+            listaProductos.innerHTML = ''; // Elimina todos los elementos dentro de la lista
+        }
+    </script>
 
 </body>
 </html>
