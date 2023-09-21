@@ -30,7 +30,7 @@ body{
     height: 35px;
     width: auto;
 }
-
+/*Botón: Iniciar sesión*/
 .nav1{
     background-color: none;
     width: auto;
@@ -40,7 +40,7 @@ body{
     font-weight: 700;
     color: #FFD2DE;
 }
-
+/*Botón: Crear cuenta*/
 .nav2{
     background-color: #FFD2DE;
     padding: 15px 15px;
@@ -72,7 +72,7 @@ body{
     font-weight: 800;
 }
 
-/*El comparador de precios*/
+/*Parte derecha del comparador de precios (Nombre,Precio,Comercio)*/
 .contenido{
     background-color: azure;
     display: flex;
@@ -91,4 +91,12 @@ body{
 .formulario{
     display: flex;
 
+}
+/*Parte derecha de comparador de precios (producto-comercio-precio y botones)*/
+#titulo_lista{
+    width: 100%;
+    padding: 15px 5%;
+    background-color: #013800;
+    border-radius: 15px;
+    color: #ffffff;
 }
