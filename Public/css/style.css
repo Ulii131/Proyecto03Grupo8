@@ -1,4 +1,4 @@
-/*Agregado de las tipografía*/
+/*Agregado de la familia tipográfica*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
 
@@ -77,18 +77,21 @@ body{
     font-weight: 800;
 }
 
-/*Parte derecha del comparador de precios (Nombre,Precio,Comercio)*/
+/*Parte derecha: comparador de precios (Nombre,Precio,Comercio)*/
 .contenido{
     background-color: azure;
-    display: flex;
     padding: 15px 5%;
     justify-content: space-between;
+    display: flex;
+    
+
 }
 
 /*Titulo2: "Comparador de precios"*/
 #titulo2{
     background-color: #013800;
     padding: 15px 10px;
+    margin-right: px;
     margin-bottom: 10%;
     border-radius: 15px;
     color: #ffffff;
@@ -108,3 +111,38 @@ body{
     border-radius: 15px;
     color: #ffffff;
 }
+
+/*Se visualizan los productos ingresados*/
+#listaProductos{
+    background-color: #BFCE66;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #013800;
+}
+
+/*Estilización de botónes*/
+.botones{
+    height: auto;
+    display: flex;
+}
+button{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 15px;
+    background-color: #E8207A;
+    border-radius: 15px;
+    padding: 10px 5%;
+    overflow: hidden;
+    border: none;
+}
+
+/*Estilización de los inputs*/
+
+.input{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
