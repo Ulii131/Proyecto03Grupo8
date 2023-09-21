@@ -1,0 +1,94 @@
+/*Agregado de las tipografía*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/*Estilo del encabezado*/
+.header{
+    background-color: #E8207A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;
+}
+
+.logo img{
+    height: 35px;
+    width: auto;
+}
+
+.nav1{
+    background-color: none;
+    width: auto;
+    padding: 10px 10px;
+    border: 3px solid #FFD2DE;
+    border-radius: 15px;
+    font-weight: 700;
+    color: #FFD2DE;
+}
+
+.nav2{
+    background-color: #FFD2DE;
+    padding: 15px 15px;
+    border-radius: 15px;
+    font-weight: 700;
+    color: #013800;
+}
+
+/*Fondo y texto encima*/
+.segundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.titulo{
+    width: 50%;
+    text-align: center;
+    background-color: hsla(119, 100%, 11%, 0.742);
+    padding: 50px 10px;
+    display: inline;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 200%;
+    font-weight: 800;
+}
+
+/*El comparador de precios*/
+.contenido{
+    background-color: azure;
+    display: flex;
+    padding: 15px 5%;
+    justify-content: space-between;
+}
+
+#titulo2{
+    background-color: #013800;
+    padding: 15px 10px;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.formulario{
+    display: flex;
+
+}

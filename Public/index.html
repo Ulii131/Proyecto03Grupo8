@@ -9,38 +9,52 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-              <a href=""class="Logo"><img src="img/Logotipo.png" alt="Logo de Piggi"></a>
-            <nav class="navegacion">
-                <ul>
-                    <li> <a href="#" class="nav">Iniciar sesión</a></li>
-                    <li><a href="#"class="nav">Crear cuenta</a></li>
-                </ul>
+        <div class="header">
+              <a href=""class="logo"><img src="img/Logotipo.png" alt="Logo de Piggi"></a>
+            <nav class="navegador">
+                
+                <a href="#" class="nav1">Iniciar sesión</a>
+                <a href="#"class="nav2">Crear cuenta</a>  
       
             </nav>
+            
         </div>
     </header>
-    <h1>Listado y Comparación de Productos</h1>
+    <section class="segundo">
+        <h1 class="titulo">¡Te ayudamos a buscar y ahorrar mejor!</h1>
 
-    <!-- Formulario para agregar productos -->
-    <form id="formulario_producto">
-        <label for="nombre">Nombre del Producto:</label>
-        <input type="text" id="nombre" required>
-        <label for="precio">Precio:</label>
-        <input type="number" id="precio" required>
-        <label for="comercio">Comercio:</label>
-        <input type="text" id="comercio" required>
-        <button type="submit" id="boton">Guardar Producto</button>
-    </form>
+    </section>
+    <div class="contenido">
+        <div class="info">
+            <h2 id="titulo2">Comparador de precios</h2>
+        <!-- Formulario para agregar productos -->
+        <div class="formulario">
+            <form id="formulario_producto">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" required>
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" required>
+                <label for="comercio">Comercio:</label>
+                <input type="text" id="comercio" required>
+                <button type="submit" id="boton">Guardar Producto</button>
+            </form>
+        </div>
+
+        </div>
+        
     <div class="lista">
+        <h3>Produtos-Comercio-Precio</h3>
         <ul id="listaProductos">
 
         </ul>
+        <button id="ordenarProductos">Ordenar Productos Alfabéticamente</button>
+        <button id="ordenarPrecio">Ordenar Productos Por Precio</button>
+
     </div>
+    </div>
+   
 
-    <button id="ordenarProductos">Ordenar Productos Alfabéticamente</button>
-    <button id="ordenarPrecio">Ordenar Productos Por Precio</button>
-
+    
 
     <!-- Botón para organizar la lista en orden alfabético -->
  
