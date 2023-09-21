@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggi</title>
+    <link rel="Icon" href="img/Piggi.ico">
+    <link rel="stylesheet" href="../Public/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+              <a href=""class="Logo"><img src="img/Logotipo.png" alt="Logo de Piggi"></a>
+            <nav class="navegacion">
+                <ul>
+                    <li> <a href="#" class="nav">Iniciar sesión</a></li>
+                    <li><a href="#"class="nav">Crear cuenta</a></li>
+                </ul>
+      
+            </nav>
+        </div>
+    </header>
+    <h1>Listado y Comparación de Productos</h1>
+
+    <!-- Formulario para agregar productos -->
+    <form id="formulario_producto">
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" required>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" required>
+        <label for="comercio">Comercio:</label>
+        <input type="text" id="comercio" required>
+        <button type="submit" id="boton">Guardar Producto</button>
+    </form>
+    <div class="lista">
+        <ul id="listaProductos">
+
+        </ul>
+    </div>
+
+    <button id="ordenarProductos">Ordenar Productos Alfabéticamente</button>
+    <button id="ordenarPrecio">Ordenar Productos Por Precio</button>
+
+
+    <!-- Botón para organizar la lista en orden alfabético -->
+ 
+
+    <!-- <script>
+        function organizarLista() {
+            const listaProductos = document.getElementById('lista-productos');
+            const items = Array.from(listaProductos.children);
+
+            items.sort(function(a, b) {
+                return a.textContent.localeCompare(b.textContent);
+            });
+
+            items.forEach(item => listaProductos.appendChild(item));
+        }
+    </script> -->
+
+
+    <!-- Botón para ordenar los productos de menor a mayor precio -->
+    <!-- <button onclick="organizarPorPrecio()">Organizar por menor precio</button>
+
+    <script>
+        function organizarPorPrecio() {
+            const listaProductos = document.getElementById('lista-productos');
+            const items = Array.from(listaProductos.children);
+
+            items.sort(function(a, b) {
+                const precioA = parseFloat(a.getAttribute('data-precio'));
+                const precioB = parseFloat(b.getAttribute('data-precio'));
+                return precioA - precioB;
+            });
+
+            items.forEach(item => listaProductos.appendChild(item));
+        }
+    </script> -->
+
+
+    <!-- Botón para borrar todos los productos -->
+    <!-- <button onclick="borrarProductos()">Borrar todos los productos</button>
+
+    <script>
+        function borrarProductos() {
+            const listaProductos = document.getElementById('lista-productos');
+            listaProductos.innerHTML = ''; // Elimina todos los elementos dentro de la lista
+        }
+    </script> -->
+
+    <script src="../src/index.js"></script>
+
+</body>
+</html>
