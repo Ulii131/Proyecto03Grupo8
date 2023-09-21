@@ -30,6 +30,7 @@ body{
     height: 35px;
     width: auto;
 }
+
 /*Botón: Iniciar sesión*/
 .nav1{
     background-color: none;
@@ -40,16 +41,19 @@ body{
     font-weight: 700;
     color: #FFD2DE;
 }
+
 /*Botón: Crear cuenta*/
 .nav2{
     background-color: #FFD2DE;
-    padding: 15px 15px;
+    padding: 13px 13px;
     border-radius: 15px;
     font-weight: 700;
     color: #013800;
 }
 
 /*Fondo y texto encima*/
+
+/*Imagen del fondo*/
 .segundo{
     display: flex;
     align-items: center;
@@ -60,6 +64,7 @@ body{
     background-position: center center;
 }
 
+/*Titulo del centro: "Te ayudamos a buscar..."*/
 .titulo{
     width: 50%;
     text-align: center;
@@ -80,6 +85,7 @@ body{
     justify-content: space-between;
 }
 
+/*Titulo2: "Comparador de precios"*/
 #titulo2{
     background-color: #013800;
     padding: 15px 10px;
@@ -93,6 +99,8 @@ body{
 
 }
 /*Parte derecha de comparador de precios (producto-comercio-precio y botones)*/
+
+/*Titulo3: Producto-comercio-precio*/
 #titulo_lista{
     width: 100%;
     padding: 15px 5%;
