@@ -80,9 +80,12 @@ body{
 /*Parte derecha: comparador de precios (Nombre,Precio,Comercio)*/
 .contenido{
     background-color: azure;
+    margin-left: 12%;
+    margin-right: 12%;
     padding: 15px 5%;
     justify-content: space-between;
     display: flex;
+    
     
 
 }
@@ -91,16 +94,23 @@ body{
 #titulo2{
     background-color: #013800;
     padding: 15px 10px;
-    margin-right: px;
+    margin-right: 2px;
     margin-bottom: 10%;
     border-radius: 15px;
     color: #ffffff;
 }
 
-.formulario{
+.form{
     display: flex;
+    margin-top: 25px;
 
 }
+
+.info{
+    background-color: aquamarine;
+    padding: 5px 15px;
+}
+
 /*Parte derecha de comparador de precios (producto-comercio-precio y botones)*/
 
 /*Titulo3: Producto-comercio-precio*/
@@ -112,8 +122,10 @@ body{
     color: #ffffff;
 }
 
-/*Se visualizan los productos ingresados*/
+
+/*donde se visualizan los productos ingresados*/
 #listaProductos{
+    margin-top: 20px;
     background-color: #BFCE66;
     border-radius: 10px;
     font-weight: 500;
@@ -139,10 +151,15 @@ button{
 /*Estilización de los inputs*/
 
 .input{
-    width: 100%;
-    height: 50px;
-    max-width: 400px;
-    position: relative;
-    overflow: hidden;
+
+        appearance: none;
+        border: none;
+        outline: none;
+        border-bottom: .2em solid #E91E63;
+        background: rgba(#E91E63, .2);
+        border-radius: .2em .2em 0 0;
+        padding: .4em;
+        color: #E91E63;
+
 }
 

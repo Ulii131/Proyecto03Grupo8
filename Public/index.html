@@ -27,15 +27,24 @@
     <div class="contenido">
         <div class="info">
             <h2 id="titulo2">Comparador de precios</h2>
-        <!-- Formulario para agregar productos -->
-        <div class="formulario">
+         <!-- Formulario para agregar productos -->
+         <div class="form">
             <form id="formulario_producto">
-                <label for="nombre">Nombre del Producto:</label>
-                <input type="text" id="nombre" required>
-                <label for="precio">Precio:</label>
-                <input type="number" id="precio" required>
-                <label for="comercio">Comercio:</label>
-                <input type="text" id="comercio" required>
+                <div class="nom">
+                    <label for="nombre">Nombre del Producto:</label>
+                    <input class="input" type="text" id="nombre" required>
+                </div>
+               
+                <div class="Precio">
+                    <label for="precio">Precio:</label>
+                   <input class="input" type="number" id="precio" required>
+                </div>
+                
+                <div class="comercio">
+                    <label for="comercio">Comercio:</label>
+                    <input class="input" type="text" id="comercio" required>
+                </div>
+                
                 <button type="submit" id="boton">Guardar Producto</button>
             </form>
         </div>
